@@ -14,8 +14,7 @@ mongoose.connect("mongodb+srv://salvatorepau91:rSotH7nz6hTkPjnG@m6d1.iebzrkd.mon
     .then(() => {
         server.listen(port, () => {
             console.log("Server listning to " + port)
-            
         });
-    }).catch(()=> {
+    }).catch(() => {
         console.log("Errore connessione database")
     })

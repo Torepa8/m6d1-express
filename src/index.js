@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Apirouter from "./ApiRouter.js";
+import Apirouter from "./routers/ApiRouter.js";
 import express from "express";
 
 const server = express()

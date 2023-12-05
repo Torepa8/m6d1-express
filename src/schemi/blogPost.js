@@ -3,12 +3,15 @@ import mongoose, { Schema } from "mongoose";
 const blogSchema = new Schema({
     category: {
         type: String,
+        require:true,
     },
     title: {
         type: String,
+        require:true,
     },
     cover: {
         type: String,
+        require:true,
     },
     readTime: {
         value:Number,
@@ -20,7 +23,8 @@ const blogSchema = new Schema({
     },
     content:{
         type:String,
+        require:true,
     }
 })
 
-export const blogPost = mongoose.model("blogPost", blogSchema);
+export const blogPost = mongoose.model("blogpost", blogSchema);

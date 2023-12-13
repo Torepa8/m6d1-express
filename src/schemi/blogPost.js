@@ -17,13 +17,16 @@ const blogSchema = new Schema({
         value:Number,
         unit: String,
     },
-    author: {
+    author: [{
         type:Schema.Types.ObjectId,
         ref:"users",
-    },
+    }],
     content:{
         type:String,
         require:true,
+    },
+    comments{
+        type
     }
 })
 

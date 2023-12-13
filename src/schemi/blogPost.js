@@ -1,4 +1,4 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, { Schema, SchemaTypeOptions } from "mongoose";
 
 const blogSchema = new Schema({
     category: {
@@ -17,16 +17,14 @@ const blogSchema = new Schema({
         value:Number,
         unit: String,
     },
-    author: [{
+    author: {
         type:Schema.Types.ObjectId,
+        require:true,
         ref:"users",
-    }],
+    },
     content:{
         type:String,
         require:true,
-    },
-    comments{
-        type
     }
 })
 

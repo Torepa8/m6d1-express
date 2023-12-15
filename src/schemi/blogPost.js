@@ -25,7 +25,10 @@ const blogSchema = new Schema({
     content:{
         type:String,
         require:true,
-    }
+    },
+    comments:[{
+        type:String,
+    }]
 })
 
 export const blogPost = mongoose.model("blogpost", blogSchema);
